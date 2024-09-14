@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: #0b0c0b; 
+            border: 1px; 
+            color: white; 
+            padding: 15px 32px; 
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            font-size: 16px; 
+            margin: 4px 2px; 
+            cursor:pointer; 
+            border-radius: 20px; 
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Taller 4</h1>
+    <p id="myParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo suscipit excepturi voluptas sit cum dolor vero modi voluptates? Ducimus molestias impedit id eveniet, ipsum natus autem maxime facere blanditiis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iure blanditiis porro, quis perferendis perspiciatis illum iste placeat fuga fugit atque alias quasi explicabo optio fugiat itaque. Pariatur, error expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis officiis sunt porro modi sit numquam quam quae delectus ipsa deserunt sed tempore mollitia hic, saepe beatae iure, deleniti dolore facere?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus similique esse porro saepe sed temporibus tenetur, expedita, officia voluptatibus enim ab ullam. Labore dignissimos, esse minima possimus fuga nam.</p>
+
+    <button id="myButton">Haz click aquí</button>
+    <button id="myButton2">Haz click aquí otra vez</button>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            document.getElementById('myParagraph').style.color = "green";
+        });
+
+        document.getElementById('myButton2').addEventListener('click', function() {
+            var paragraphs = document.getElementsByTagName('p');
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].style.color ="red";
+            }
+        });
+    </script>
+</body>
+</html>
+
+
